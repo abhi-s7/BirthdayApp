@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Happy Birthday</string>
+    <string name="title_audio">Audio</string>
+    <string name="title_wishes">Wishes</string>
+    <string name="title_images">Images</string>
+    <string name="title_video">Video</string>
+    <string name="title_text">Text</string>
+
+    <string name="desc1">From the innocent looks from \'13 reasons why\'</string>
+    <string name="desc2">to the bold character from \'Cursed\'</string>
+    <string name="desc3">You have always won our hearts with your awesome acting and sweet smile.</string>
+   </resources>

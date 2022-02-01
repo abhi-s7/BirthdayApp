@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Audio"
+    android:background="@drawable/centered">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_marginBottom="80dp"
+        android:padding="15dp"
+        android:background="@android:color/transparent"
+        >
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekbar"
+                android:layout_weight="1"
+                android:progress="0"
+                android:progressDrawable="@drawable/seek_progress_bar"
+                android:thumb="@drawable/seek_thumb"
+                />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_prev"
+                android:layout_width="0dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:tint="@color/colorDarkGrey"
+                app:srcCompat="@drawable/ic_skip_previous" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/btn_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:tint="@android:color/white"
+                app:backgroundTint="@color/colorDarkGrey"
+                app:elevation="2dp"
+                app:fabSize="normal"
+                app:rippleColor="@color/colorBlue"
+                app:srcCompat="@drawable/ic_pause" />
+
+            <ImageButton
+                android:id="@+id/btn_next"
+                android:layout_width="0dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:tint="@color/colorDarkGrey"
+                app:srcCompat="@drawable/ic_skip_next" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="Happy Birthday"
+        android:textSize="100sp" />
+
+
+</RelativeLayout>
